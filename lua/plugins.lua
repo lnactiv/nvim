@@ -17,4 +17,9 @@ return require('packer').startup(function()
     use 'hrsh7th/vim-vsnip'
     use 'hrsh7th/vim-vsnip-integ'
     use 'sheerun/vim-polyglot'
+    use 'navarasu/onedark.nvim'
+    use {
+        'hoob3rt/lualine.nvim',
+        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
 end)
