@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["lightline.vim"] = {
+    loaded = true,
+    path = "/home/vinh/.local/share/nvim/site/pack/packer/start/lightline.vim"
+  },
   ["nvim-compe"] = {
     loaded = true,
     path = "/home/vinh/.local/share/nvim/site/pack/packer/start/nvim-compe"
@@ -81,13 +85,33 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/vinh/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
+  onedark = {
+    loaded = true,
+    path = "/home/vinh/.local/share/nvim/site/pack/packer/start/onedark/vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/vinh/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "/home/vinh/.local/share/nvim/site/pack/packer/start/vim-polyglot"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/vinh/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["vim-vsnip-integ"] = {
+    loaded = true,
+    path = "/home/vinh/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Runtimepath customization
+time([[Runtimepath customization]], true)
+vim.o.runtimepath = vim.o.runtimepath .. ",/home/vinh/.local/share/nvim/site/pack/packer/start/onedark/vim"
+time([[Runtimepath customization]], false)
 if should_profile then save_profiles() end
 
 end)
