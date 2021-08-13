@@ -9,3 +9,5 @@ vim.o.mouse = 'a'
 vim.o.relativenumber = true
 vim.o.syntax = 'on'
 
+vim.api.nvim_command('hi Normal guibg=NONE ctermbg=NONE')
+vim.api.nvim_command('hi LineNr guibg=NONE ctermbg=NONE')
