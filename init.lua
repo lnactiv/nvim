@@ -14,3 +14,5 @@ require('lualine').setup {
 }
 
 require('settings')
+
+require'nvim-tree'.setup {}
