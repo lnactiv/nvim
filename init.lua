@@ -4,6 +4,7 @@ require('nv-compe')
 
 require('python-lsp')
 require('clangd-lsp')
+require('vscode-langservers-extracted-lsp')
 
 require('onedark').setup()
 
